@@ -41,6 +41,10 @@ header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include laptop() {
+			flex-direction: column;
+			height: max-content;
+		}
 		@include mobile() {
 			padding: 0 15px;
 		}
@@ -70,10 +74,15 @@ header {
 		ul {
 			display: flex;
 			align-items: center;
+			@include laptop() {
+				flex-direction: column;
+			}
 			li {
 				padding: 2rem 20px;
-				@include tablet() {
+				@include laptop() {
 					padding: 10px;
+				}
+				@include tablet() {
 				}
 				a {
 					color: black;

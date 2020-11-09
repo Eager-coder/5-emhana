@@ -1,0 +1,40 @@
+.timetable {
+  width: 100%;
+  max-width: 1250px;
+  padding: 0 25px;
+  margin: auto;
+}
+
+.timetable h1 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timetable h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.timetable ul li a {
+  display: block;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timetable ul li a {
+    font-size: 1rem;
+  }
+}
